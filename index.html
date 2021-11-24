@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="texto1">Bem vindo ao restaurante Aleatórium</h1>
+        <p id="texto2">Responda a esse breve questionário acerca da sua satisfação com nossos serviços</p>
+        
+    </header>
+    <form action="">
+        <label for="ambiente">
+            Ambiente
+        </label>
+        <input id="ambiente" type="range" min="1" max="5" name="aleatorio" value="" step="1">
+        
+        <label for="qualidade-comida">
+            Qualidade da comida
+        </label>
+        <input id="qualidade-comida" type="range" min="1" max="5" name="sabor" value="" step="1">
+        <label for="atendimento">
+            Qualidade do Atendimento
+        </label>
+        <input id="atendimento" type="range" min="1" max="5" name="atender" value="" step="1">
+    </form>
+    <button type="submit" onclick="enviar()">enviar</button>
+    <p class="r-ambiente"></p>
+    <p class="r-comida"></p>
+    <p class="r-atendimento"></p>
+    <script src="script.js"></script>
+</body>
+</html>
